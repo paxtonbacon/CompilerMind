@@ -39,7 +39,7 @@ npm run dev
 ### Docker 部署
 
 ```bash
-git clone [<repo-url>](https://github.com/paxtonbacon/CompilerMind.git) && cd ComplieMind
+git clone [<repo-url>](https://github.com/paxtonbacon/CompilerMind.git) && cd CompilerMind
 
 # 配置 DeepSeek API Key（编辑 backend/app/config.py）
 # DEEPSEEK_API_KEY = "your-key"
