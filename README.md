@@ -39,7 +39,7 @@ npm run dev
 ### Docker 部署
 
 ```bash
-git clone [<repo-url>](https://github.com/paxtonbacon/CompilerMind.git) && cd CompilerMind
+git clone https://github.com/paxtonbacon/CompilerMind.git && cd CompilerMind
 
 # 配置 DeepSeek API Key（编辑 backend/app/config.py）
 # DEEPSEEK_API_KEY = "your-key"
@@ -47,7 +47,9 @@ git clone [<repo-url>](https://github.com/paxtonbacon/CompilerMind.git) && cd Co
 docker compose up -d --build
 ```
 
-访问 `http://<服务器IP>`，前端运行在 80 端口，后端在 9001 端口。nginx 自动将 `/api/` 请求代理到后端容器。
+访问 `http://<服务器IP>`，前端运行在 8096 端口，后端在 9001 端口。nginx 自动将 `/api/` 请求代理到后端容器。
+访问 `http://<服务器IP>:8096` 即可访问页面
+（如若修改，请在docker-compose中修改8096:80为其他:80）
 
 ## 编译流水线
 
